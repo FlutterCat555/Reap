@@ -1,0 +1,20 @@
+{
+  "item.reap.scythe": "Scythe",
+  "item.reap.netherite_scythe": "Netherite Scythe",
+
+  "item.reap.hood": "Hood",
+
+  "tooltip.reap.scythe.tooltip.ln1": "§8Use on crops to harvest & replant,",
+  "tooltip.reap.scythe.tooltip.ln2": "§8use on plants to break",
+
+  "tooltip.reap.hood.tooltip.ln1": "§8Hides your name tag and locator waypoint",
+
+  "block.reap.leaf_layer": "Leaf Pile",
+
+  "advancements.reap.scythe.title": "Extra Dedication",
+  "advancements.reap.scythe.description": "Purchase a scythe from a maximum level farmer",
+
+  "advancements.reap.netherite_scythe.title": "Overkill Dedication",
+  "advancements.reap.netherite_scythe.description": "Upgrade your scythe with a netherite ingot"
+
+}

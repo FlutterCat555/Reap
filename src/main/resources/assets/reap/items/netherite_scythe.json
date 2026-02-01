@@ -1,0 +1,31 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "reap:item/netherite_scythe_hud"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "reap:item/netherite_scythe_hud"
+          },
+          "property": "minecraft:bundle/has_selected_item"
+        },
+        "when": [
+          "gui",
+          "ground",
+          "fixed"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "reap:item/netherite_scythe"
+    },
+    "property": "minecraft:display_context"
+  }
+}

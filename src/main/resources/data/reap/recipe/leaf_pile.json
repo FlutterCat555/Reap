@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:leaf_litter",
+    "minecraft:leaf_litter",
+    "minecraft:leaf_litter",
+    "minecraft:leaf_litter"
+  ],
+  "result": {
+    "id": "reap:leaf_layer",
+    "count": 4
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "reap",
+	"version": "${version}",
+	"name": "Reap",
+	"description": "A cozy mod about farming, aesthetic, and murder.",
+	"authors": [
+		"FlutterCat555",
+        "MimicNPaste"
+	],
+	"contact": {
+		"homepage": "TODO: ADD CONTACTS"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/reap/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"uwu.fluttercat.reap.Reap"
+		],
+		"fabric-datagen": [
+			"uwu.fluttercat.reap.ReapDataGenerator"
+		]
+	},
+	"mixins": [
+		"reap.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

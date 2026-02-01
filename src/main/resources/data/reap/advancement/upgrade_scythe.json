@@ -1,0 +1,40 @@
+{
+  "parent": "reap:obtain_scythe",
+  "criteria": {
+    "netherite_scythe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reap:netherite_scythe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.reap.netherite_scythe.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "id": "reap:netherite_scythe"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.reap.netherite_scythe.title"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "requirements": [
+    [
+      "netherite_scythe"
+    ]
+  ]
+}

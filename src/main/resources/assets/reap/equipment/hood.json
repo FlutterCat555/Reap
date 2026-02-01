@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "reap:hood"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "reap:hood"
+      }
+    ]
+  }
+}

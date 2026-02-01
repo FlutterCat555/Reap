@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "reap:scythe",
+  "result": {
+    "id": "reap:netherite_scythe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

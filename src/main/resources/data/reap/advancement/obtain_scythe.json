@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "scythe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reap:scythe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.reap.scythe.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "id": "reap:scythe"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.reap.scythe.title"
+    }
+  },
+  "requirements": [
+    [
+      "scythe"
+    ]
+  ]
+}
