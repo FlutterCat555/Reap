@@ -1,4 +1,4 @@
-package uwu.fluttercat.reap;
+package dev.fluttercat.reap;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -10,8 +10,8 @@ import net.minecraft.village.TradedItem;
 import net.minecraft.village.VillagerProfession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import uwu.fluttercat.reap.block.ModBlocks;
-import uwu.fluttercat.reap.item.ModItems;
+import dev.fluttercat.reap.block.ModBlocks;
+import dev.fluttercat.reap.item.ModItems;
 
 public class Reap implements ModInitializer {
 	public static final String MOD_ID = "reap";

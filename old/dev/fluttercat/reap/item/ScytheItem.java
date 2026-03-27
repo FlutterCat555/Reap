@@ -1,4 +1,4 @@
-package uwu.fluttercat.reap.item;
+package dev.fluttercat.reap.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

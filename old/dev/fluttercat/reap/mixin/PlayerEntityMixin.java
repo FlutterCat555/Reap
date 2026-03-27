@@ -1,16 +1,13 @@
-package uwu.fluttercat.reap.mixin;
+package dev.fluttercat.reap.mixin;
 
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import uwu.fluttercat.reap.item.ModItems;
+import dev.fluttercat.reap.item.ModItems;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin {

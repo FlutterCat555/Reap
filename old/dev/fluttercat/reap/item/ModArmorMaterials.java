@@ -1,7 +1,6 @@
-package uwu.fluttercat.reap.item;
+package dev.fluttercat.reap.item;
 
 import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.item.equipment.ArmorMaterials;
 import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registry;
@@ -9,11 +8,9 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-import uwu.fluttercat.reap.Reap;
+import dev.fluttercat.reap.Reap;
 
 import java.util.EnumMap;
-
-import static net.minecraft.item.equipment.EquipmentAssetKeys.LEATHER;
 
 public class ModArmorMaterials {
     static RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset"));

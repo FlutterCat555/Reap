@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "uwu.fluttercat.reap.mixin",
+  "package": "dev.fluttercat.reap.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "PlayerEntityMixin"

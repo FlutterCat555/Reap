@@ -1,10 +1,10 @@
-package uwu.fluttercat.reap.item;
+package dev.fluttercat.reap.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-import uwu.fluttercat.reap.Reap;
+import dev.fluttercat.reap.Reap;
 
 public class ModTags {
     public static class Items {

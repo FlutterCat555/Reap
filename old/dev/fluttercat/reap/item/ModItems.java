@@ -1,16 +1,11 @@
-package uwu.fluttercat.reap.item;
+package dev.fluttercat.reap.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Blocks;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.EquippableComponent;
 import net.minecraft.component.type.TooltipDisplayComponent;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.item.equipment.ArmorMaterials;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -21,11 +16,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import net.minecraft.world.waypoint.Waypoint;
-import uwu.fluttercat.reap.Reap;
+import dev.fluttercat.reap.Reap;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.function.UnaryOperator;
 
 public class ModItems {
 
