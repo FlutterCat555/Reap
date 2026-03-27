@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
+
 public class ScytheItem extends HoeItem {
 
     public ScytheItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Properties settings) {
@@ -27,12 +28,11 @@ public class ScytheItem extends HoeItem {
     public void hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         Level world = target.level();
         if (!world.isClientSide()) {
-            double flip = attacker.getDeltaMovement().y() / -4;
+            double flip = attacker.getDeltaMovement().y() / -2;
             double dx = (attacker.getX() - target.getX()) / 4;
             double dz = (attacker.getZ() - target.getZ()) / 4;
             target.push(dx, flip, dz);
             target.hurtMarked = true;
-//            target.hasImpulse = true;
         }
     }
 
@@ -44,8 +44,7 @@ public class ScytheItem extends HoeItem {
         Block block = state.getBlock();
 
             if (block instanceof CropBlock) {
-                int age = state.getValue(CropBlock.AGE);
-                if (age == 7) {
+                if(((CropBlock) block).isMaxAge(state)){
                     if(!world.isClientSide()) {
                         world.destroyBlock(pos, true, context.getPlayer());
                         world.setBlockAndUpdate(pos, block.defaultBlockState());
