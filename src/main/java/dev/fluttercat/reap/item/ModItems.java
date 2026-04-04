@@ -18,7 +18,7 @@ import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item NAIL = registerItem("nail", (settings) -> new NailItem(settings.sword(ToolMaterial.STONE, 0F, -1F)));
+//    public static final Item NAIL = registerItem("nail", (settings) -> new NailItem(settings.sword(ToolMaterial.STONE, 0F, -1F)));
 
     public static final Item SCYTHE = registerItem("scythe", (settings) -> new ScytheItem(ToolMaterial.IRON, 2.5F, -2.7F, settings){
         @Override
@@ -55,7 +55,7 @@ public class ModItems {
         Reap.LOGGER.info("Registering Mod Items for " + Reap.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(entries -> {
-            entries.insertAfter(Items.NETHERITE_SWORD,NAIL);
+//            entries.insertAfter(Items.NETHERITE_SWORD,NAIL);
             entries.insertAfter(Items.NETHERITE_AXE,SCYTHE);
             entries.insertAfter(SCYTHE,NETHERITE_SCYTHE);
             entries.insertAfter(Items.SHIELD,HOOD);

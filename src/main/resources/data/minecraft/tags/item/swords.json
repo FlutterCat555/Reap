@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "reap:scythe",
-    "reap:netherite_scythe",
-    "reap:nail"
+    "reap:netherite_scythe"
   ]
 }
