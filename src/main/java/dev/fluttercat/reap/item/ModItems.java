@@ -7,11 +7,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ToolMaterial;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.waypoints.Waypoint;
@@ -21,6 +17,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class ModItems {
+
+    public static final Item NAIL = registerItem("nail", (settings) -> new NailItem(settings.sword(ToolMaterial.STONE, 0F, -1F)));
 
     public static final Item SCYTHE = registerItem("scythe", (settings) -> new ScytheItem(ToolMaterial.IRON, 2.5F, -2.7F, settings){
         @Override
@@ -57,9 +55,10 @@ public class ModItems {
         Reap.LOGGER.info("Registering Mod Items for " + Reap.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(entries -> {
-            entries.accept(SCYTHE);
-            entries.accept(NETHERITE_SCYTHE);
-            entries.accept(HOOD);
+            entries.insertAfter(Items.NETHERITE_SWORD,NAIL);
+            entries.insertAfter(Items.NETHERITE_AXE,SCYTHE);
+            entries.insertAfter(SCYTHE,NETHERITE_SCYTHE);
+            entries.insertAfter(Items.SHIELD,HOOD);
         });
     }
 }

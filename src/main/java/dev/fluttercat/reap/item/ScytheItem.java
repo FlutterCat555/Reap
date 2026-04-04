@@ -2,6 +2,7 @@ package dev.fluttercat.reap.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
@@ -54,6 +55,7 @@ public class ScytheItem extends HoeItem {
             } else if (state.is(BlockTags.REPLACEABLE) || state.is(BlockTags.FLOWERS)) {
                 int toDamage = 0;
                 if (!world.isClientSide()) {
+                    ((ServerLevel) world).sendParticles(ParticleTypes.SWEEP_ATTACK, pos.getX(), pos.getY()+0.5, pos.getZ(), 1, 0, 0, 0, 1);
                     for (int x = 2; x >= -2; --x) {
                         for (int z = -2; z <= 2; ++z) {
                             BlockPos targeted = pos.offset(x, 0, z);
@@ -68,7 +70,7 @@ public class ScytheItem extends HoeItem {
                         context.getItemInHand().hurtAndBreak(toDamage, context.getPlayer(), context.getHand().asEquipmentSlot());
                     }
                 }
-                world.addParticle(ParticleTypes.SWEEP_ATTACK, pos.getX(),pos.getY()+0.5,pos.getZ(),0,0,0);
+//                world.addParticle(ParticleTypes.SWEEP_ATTACK, pos.getX(), pos.getY() + 0.5, pos.getZ(), 0, 0, 0); legacy  code.  keeping it for ref.
                 world.playSound(context.getPlayer(), pos, SoundEvents.PLAYER_ATTACK_SWEEP, SoundSource.BLOCKS, 1.0F, 1.0F);
                 return InteractionResult.SUCCESS;
             } else {
